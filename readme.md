@@ -1,7 +1,7 @@
 # Example using Pixi.js + Ngraph layout in web worker
 
 ## Motivation
-When using Pixi.js to render an Ngraph layout, its convenient to place the layout functions within the render loop so that each animation step updates the layout. As more load is placed on the render loop (such as more advanced graphics), framerates can drop. The rendering speed may still look smooth enough however because the layout is called once per render loop, it takes longer to resolve the layout and can seem sluggish even with Ngraph's fast layout algorithms. Further, including the layout function within the render loop also drives the framerate down.
+When using Pixi.js to render an Ngraph layout, its convenient to place the layout functions within the render loop so that each animation step updates the layout. As more load is placed on the render loop (such as more advanced graphics), framerates can drop. Even if the rendering speed is sufficient for smooth visuals, it can delay resolution of the force layout. Because the layout is called once per render loop, it takes longer to resolve the layout and can seem sluggish even with Ngraph's fast layout algorithms. Further, including the layout function within the render loop also drives the framerate down.
 
 ## Solution
 ### Web Workers

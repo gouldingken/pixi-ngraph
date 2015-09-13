@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "ngraph.forcelayout": "0.0.3",
+    "ngraph.generators": "0.0.2",
+    "ngraph.physics.simulator": "0.0.4",
+    "ngraph.graph": "0.0.11",
+    "webworkify": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

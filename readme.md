@@ -22,7 +22,7 @@ It also appears that the render time is not completely independent from the layo
 
 # Examples
 Live examples courtesy of anvaka:
-* https://anvaka.github.io/pixi-ngraph/index.html - this is unmodified version with layout inside web workers
+* https://anvaka.github.io/pixi-ngraph/index.html - layout inside web workers (this solution)
 * https://anvaka.github.io/pixi-ngraph/index-plain.html - this version computes layout inside requestAnimationFrame()
 
 The web worker resolves approximately 8 times faster.

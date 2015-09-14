@@ -20,5 +20,11 @@ This example uses an older version of Pixi.js and uses the graphics API to rende
 
 It also appears that the render time is not completely independent from the layout loop even using a web worker. Both seem to slow down as the render load on the browser increases, but there are still significant gains to putting the layout on its own thread.  
 
+# Examples
+Live examples courtesy of anvaka:
+https://anvaka.github.io/pixi-ngraph/index.html - this is unmodified version with layout inside web workers
+https://anvaka.github.io/pixi-ngraph/index-plain.html - this version computes layout inside requestAnimationFrame()
+The web worker resolves approximately 8 times faster.
+
 # How to run examples locally?
 Powered by `npm` and `gulp`.  Dist folder can be generated using `npm start`. Make sure you have all modules installed inside a folder (`npm install` inside folder with example will download all dependencies). 

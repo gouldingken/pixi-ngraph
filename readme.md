@@ -7,6 +7,8 @@ When using Pixi.js to render an Ngraph layout, its convenient to place the layou
 ### Web Workers
 Using web workers we can place the layout loops on a different thread from the render loop. This allows the layout to run independently and can achieve much faster resolution times. 
 
+![threading graphic ](_gfx/threading.png)
+
 `webworkify` is used to include the web worker code with `browserify`
 
 ### Skipping Messages
